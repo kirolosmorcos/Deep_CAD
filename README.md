@@ -57,16 +57,6 @@ The project consists of two main parts:
     *   **3D Voxel Plots:** `matplotlib.pyplot.voxels` is used for basic 3D rendering of original and reconstructed shapes from the Primitive AE (by binarizing the soft output).
     *   *(Advanced visualization using libraries like `vedo` for mesh rendering and individual primitive display is a potential extension but not covered in the core version here).*
 
-## Project Structure (Conceptual Python Files)
-
-*   `shape_generator.py`: Contains `create_cube`, `create_sphere`, `create_cylinder`.
-*   `dataset.py`: Contains `SyntheticPrimitivesDataset`.
-*   `models.py`: Contains `Conv3DAutoencoder` and `PrimitiveAutoencoder`.
-*   `renderer.py`: Contains `generate_primitive_voxel_torch` and `primitives_to_voxel_grid_torch`.
-*   `train_voxel_ae.py`: Script to train the `Conv3DAutoencoder`.
-*   `train_primitive_ae.py`: Script to train the `PrimitiveAutoencoder`.
-*   `visualize.py`: Contains plotting functions like `show_voxel_slice` and `plot_voxel_3d`.
-*   `main.py` or Jupyter Notebook: To run experiments, orchestrate training, and visualize results.
 
 ## How to Run
 
@@ -81,7 +71,7 @@ The project consists of two main parts:
     ```
 
 2.  **Prepare the Code:**
-    *   Organize the provided code blocks into Python files or a Jupyter Notebook as suggested in "Project Structure".
+    *   Organize the provided code blocks into Python files or a Jupyter Notebook .
 
 3.  **Train the Voxel Autoencoder (Optional but Recommended Baseline):**
     *   Run the script/cells corresponding to `train_voxel_ae.py`.
